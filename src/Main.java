@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         /* ćw.2 pętle for */
+        System.out.println("Hello");
 
         /* zad.1 Napisz program który będzie iterował od 100 do 0,
          *  i wyświetlał liczby które są podzielne przez ostatnią cyfrę waszego indeksu
