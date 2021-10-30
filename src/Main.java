@@ -48,7 +48,7 @@ public class Main {
             licz++;
 
         }*/
-
+        /*
         double[] losowe_double = new double[5];
         int licz2 = 0;
         double uppLim = 25;
@@ -58,12 +58,28 @@ public class Main {
             losowe_double[licz2] = Math.random();
             System.out.println(losowe_double[licz2]);
             licz2++;
-        }
+        }*/
+
+        /*
+        String[] stringi = {
+                "java", "kawa", "rano", "spac", "labo"
+        };
+        int dlug = stringi.length - 1;
+        while (dlug >= 0)
+        {
+            System.out.println(dlug);
+            System.out.println(stringi[dlug]);
+            dlug--;
+        }*/
 
         /* zad.3
         a) sprawdzić jak zachowuje się pętla while gdy w jej warunku damy true --> while(true)
         b) a jak gdy damy false --> while(false)
         */
+
+        while(true){
+            System.out.println("czesc");
+        }
 
 
     }
