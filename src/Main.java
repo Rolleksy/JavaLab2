@@ -1,9 +1,15 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+import java.util.Random;
+
 
 public class Main {
 
     public static void main(String[] args) {
+
         /* ćwiczenie 5 Metody */
 
         /* zad.1
@@ -12,6 +18,11 @@ public class Main {
         c) napisać metodę, która wypisze otrzymane wartości,
         d) wstawić wywołanie metody do metody main
         */
+
+
+        }
+        sout wypluwanie();
+
 
         /* zad.2
         a) stworzyc tablicę typu String[6],
@@ -39,5 +50,15 @@ public class Main {
 
 
     }
+    int wypluwanie(){
+        int[] tablica = new int[20];
+        Random rnd = new Random();
+        for (int i =0; i<tablica.length; i++){
+            int x = rnd.nextInt(20)+20;
+            tablica[i] = x;
+            System.out.println(tablica[i]);
+            return tablica[i];
+        }
+
 
 }
