@@ -9,9 +9,23 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-        podpunkt_a();
+        /*podpunkt_a();
         String slowo = podajslowo();
-        System.out.println(slowo);
+        String[] lista_slow = new String[6];
+        for (int i = 0; i<lista_slow.length; i++)
+        {
+            lista_slow[i] = podajslowo();
+        }
+        /*for (int i = 0; i<lista_slow.length; i++)
+        {
+            System.out.println(lista_slow[i]);
+        }*/
+        ///pokazliste(lista_slow);
+       // odwrocliste(lista_slow);
+        String imie = "Aleksander";
+        String nazwisko = "Purcha";
+        wypluj_imie(imie);
+        wypluj_imie(imie, nazwisko);
 
 
 
@@ -26,7 +40,17 @@ public class Main {
 
 
         }
+    static void podpunkt_a(){
+        int[] tablica = new int[20];
+        Random rnd = new Random();
+        for (int i =0; i<tablica.length; i++){
+            int x = rnd.nextInt(20)+20;
+            tablica[i] = x;
+            System.out.println(tablica[i]);
+        }
 
+
+    }
 
 
         /* zad.2
@@ -41,8 +65,17 @@ public class Main {
             String slowo = scan.nextLine();
             return slowo;
         }
-        static void pokazliste(){
+        static void pokazliste(String[] x){
+            for (int i = 0; i<x.length; i++)
+            {
+                System.out.println(x[i]);
+            }
 
+        }
+        static void odwrocliste(String[] x){
+            for (int i = x.length-1; i>=0; i--){
+                System.out.println(x[i]);
+            }
         }
 
         /* zad.3
@@ -54,6 +87,14 @@ public class Main {
             nazwisko i wiek (int), a następnie wszystko wyświetli,
         */
 
+        static void wypluj_imie(String x){
+            System.out.println(x);
+        }
+        static void wypluj_imie(String imie, String nazwisko){
+            String imienaz = imie + " " + nazwisko;
+            System.out.println(imienaz);
+        }
+
         /* zad.4
         a) napisać metodę która przyjmuje 2 parametry typu int i zwraca ich sumę, którą przypiszemy do zmiennej,
             coś takiego:                                    zmiennaA = metoda(1, 2); <-- wywołanie metody
@@ -61,17 +102,7 @@ public class Main {
             którą przypiszemy do zmiennej, coś takiego:     zmiennaB = metoda(7, 8, 9); <-- wywołanie metody
         c) wyświetlić sumę wywołań obu metod ---> print("wynik: " + (metoda(8, 9) + metoda(2, 3, 4));
         */
-        static void podpunkt_a(){
-            int[] tablica = new int[20];
-            Random rnd = new Random();
-            for (int i =0; i<tablica.length; i++){
-                int x = rnd.nextInt(20)+20;
-                tablica[i] = x;
-                System.out.println(tablica[i]);
-            }
 
-
-        }
 
     }
 
