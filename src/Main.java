@@ -26,6 +26,7 @@ public class Main {
         String nazwisko = "Purcha";
         wypluj_imie(imie);
         wypluj_imie(imie, nazwisko);
+        wypluj_imie(imie, nazwisko, 27);
 
 
 
@@ -93,6 +94,10 @@ public class Main {
         static void wypluj_imie(String imie, String nazwisko){
             String imienaz = imie + " " + nazwisko;
             System.out.println(imienaz);
+        }
+        static void wypluj_imie(String imie, String nazwisko, int wiek){
+            String dokonsoli = imie + " " + nazwisko + " " + wiek;
+            System.out.println(dokonsoli);
         }
 
         /* zad.4
