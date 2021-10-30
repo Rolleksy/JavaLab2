@@ -52,6 +52,7 @@ public class Main {
         int lit_x = 0;
         int lit_z = 0;
         int lit_q = 0;
+        int pozostale= 0;
         String slowo = "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo";
         for(int i =0; i<slowo.length(); i++){
             char litera = slowo.charAt(i);
@@ -71,6 +72,9 @@ public class Main {
                 case 'q':
                     lit_q++;
                     break;
+                default:
+                    pozostale++;
+
             }
         }
         System.out.println("Liter O jest: " + lit_o);
@@ -78,6 +82,7 @@ public class Main {
         System.out.println("Liter X jest: " + lit_x);
         System.out.println("Liter Z jest: " + lit_z);
         System.out.println("Liter Q jest: " + lit_q);
+        System.out.println("Liter pozostalych jest: " + pozostale);
 
 
 
