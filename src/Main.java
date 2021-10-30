@@ -9,6 +9,11 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
+        podpunkt_a();
+        String slowo = podajslowo();
+        System.out.println(slowo);
+
+
 
         /* ćwiczenie 5 Metody */
 
@@ -21,7 +26,7 @@ public class Main {
 
 
         }
-        sout wypluwanie();
+
 
 
         /* zad.2
@@ -30,6 +35,15 @@ public class Main {
             (użyć do tego pętli i klasy Scanner),
         c) napisać metodę która wyświetli elementy tablicy od ostatniego elementu do elementu o indeksie 0,
         */
+        static String podajslowo(){
+            System.out.println("Podaj slowo:");
+            Scanner scan = new Scanner(System.in);
+            String slowo = scan.nextLine();
+            return slowo;
+        }
+        static void pokazliste(){
+
+        }
 
         /* zad.3
         a) napisać metodę która przyjmuje 1 parametr typu String, metoda nic nie zwraca, tylko
@@ -47,18 +61,17 @@ public class Main {
             którą przypiszemy do zmiennej, coś takiego:     zmiennaB = metoda(7, 8, 9); <-- wywołanie metody
         c) wyświetlić sumę wywołań obu metod ---> print("wynik: " + (metoda(8, 9) + metoda(2, 3, 4));
         */
+        static void podpunkt_a(){
+            int[] tablica = new int[20];
+            Random rnd = new Random();
+            for (int i =0; i<tablica.length; i++){
+                int x = rnd.nextInt(20)+20;
+                tablica[i] = x;
+                System.out.println(tablica[i]);
+            }
 
 
-    }
-    int wypluwanie(){
-        int[] tablica = new int[20];
-        Random rnd = new Random();
-        for (int i =0; i<tablica.length; i++){
-            int x = rnd.nextInt(20)+20;
-            tablica[i] = x;
-            System.out.println(tablica[i]);
-            return tablica[i];
         }
 
+    }
 
-}
